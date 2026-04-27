@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kenneth Mills">
+    <meta name="description" content="Default HTML Page for SE 111">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Week 5 | Tables and Forms</title>
+</head>
+<body>
+    <h1>BIRTHDAY PARTY REGISTRATION FORM</h1>
+    <form action="confirm.html" method="GET">
+<table>
+    <thead>
+        <tr>
+            <td><b>Labels</b></td>
+            <td><b>Form Fields</b></td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Parent/Guardian Name</td>
+            <td><input type="text" name = "First Name" placeholder="First Name"><br><input type="text" name="Last Name" placeholder="Last Name">
+                
+            </td>
+            
+        </tr>
+        <tr>
+            <td>Child's First Name</td>
+            <td><input type="text" name="Child's First Name" placeholder="Child's First Name"></td>
+
+        </tr>
+        <tr>
+            <td>Child's Age</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td><b>Date and Time</b></td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td>Start Time</td>
+            <td><input type="time"></td>
+        </tr>
+        <tr>
+            <td>Number of Guests</td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td><b>Food</b></td>
+            
+        </tr>
+        <tr>
+            <td><b>Size</b></td>
+            <td>
+         <input type="radio" id="sm" name="size" value="sm">
+        <label for="sm">sm</label>
+
+        <input type="radio" id="med" name="size" value="med">
+        <label for="med">med</label>
+
+        <input type="radio" id="lg" name="size" value="lg">
+        <label for="lg">lg</label>
+</td>
+        </tr>
+        <tr>
+            <td>Drinks</td>
+      <td>
+        <input type="checkbox" id="coke" name="drinks" value="coke">
+        <label for="coke">Coke</label><br>
+        <input type="checkbox" id="sprite" name="drinks" value="sprite">
+        <label for="sprite">Sprite</label><br>
+        <input type="checkbox" id="fruitpunch" name="drinks" value="fruitpunch">
+        <label for="fruitpunch">fruit punch</label><br>
+        <input type="checkbox" id="lemonade" name="drinks" value="lemonade">
+        <label for="lemonade">lemonade</label><br>
+        <input type="checkbox" id="icedtea" name="drinks" value="icedtea">
+        <label for="icedtea">Iced Tea</label>
+      </td>
+        </tr>
+        <tr>
+            <td><b>Decorations</b></td>
+        </tr>
+        <tr>
+            <td>Color Scheme
+            </td>
+            <td>Choose a color scheme for the party <input type="color"></td>
+        </tr>
+        <tr>
+            <td>Color Scheme</td>
+            <td><textarea name="comments" id="comments" rows="5" cols="30" placeholder="Please Enter any Additional Comments."></textarea>
+        </tr>
+
+    <tr>
+        <td></td>
+        <td>
+            <input type="submit" value="Submit">
+        </td>
+    </tr>
+    </tbody>
+</table>
+</form>
+    
+</body>
+</html>

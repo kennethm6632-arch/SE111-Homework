@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 Pay Calculator JavaScript Mills</title>
+</head>
+<body>
+   <h1>Pay Calculator</h1>
+<div id="output"></div>
+    <script>
+    // inputs
+    var hourlyPay = Number(prompt("Enter hourly pay:"));
+    var hoursWorked = Number(prompt("Enter hours worked per week:"));
+    var taxRate = Number(prompt("Enter tax rate:"));
+
+    // Functions (based on your structure)
+    function calcGross(pay, hours) {
+        var gross = pay * hours * 2;
+        return gross;
+    }
+
+    function calcTax(gross, rate) {
+        var tax = gross * rate;
+        return tax;
+    }
+
+    function calcNet(gross, tax) {
+        var net = gross - tax;
+        return net;
+    }
+
+    // Run calculations ONCE
+    var grossPay = calcGross(hourlyPay, hoursWorked);
+    var taxAmount = calcTax(grossPay, taxRate);
+    var netPay = calcNet(grossPay, taxAmount);
+
+   
+    grossPay = grossPay.toFixed(2);
+    taxAmount = taxAmount.toFixed(2);
+    netPay = netPay.toFixed(2);
+// I researched this it formats the number to two decimal spaces and makes it a string
+  
+    console.log("Gross Pay: $" + grossPay);
+    console.log("Uncle Sam's Share: $" + taxAmount);
+    console.log("Net Pay: $" + netPay);
+
+   
+    alert(
+        "Gross Pay: $" + grossPay +
+        "Uncle Sam's Share: $" + taxAmount +
+        "Net Pay: $" + netPay
+    );
+document.getElementById("output").innerHTML =
+        "<p>Gross Pay: $" + grossPay + "</p>" +
+        "<p>Uncle Sam's Share: $" + taxAmount + "</p>" +
+        "<p>Net Pay: $" + netPay + "</p>";
+
+</script>
+</body>
+</html>

@@ -14,7 +14,6 @@
     var hoursWorked = Number(prompt("Enter hours worked per week:"));
     var taxRate = Number(prompt("Enter tax rate:"));
 
-    // Functions (based on your structure)
     function calcGross(pay, hours) {
         var gross = pay * hours * 2;
         return gross;
@@ -30,7 +29,6 @@
         return net;
     }
 
-    // Run calculations ONCE
     var grossPay = calcGross(hourlyPay, hoursWorked);
     var taxAmount = calcTax(grossPay, taxRate);
     var netPay = calcNet(grossPay, taxAmount);
